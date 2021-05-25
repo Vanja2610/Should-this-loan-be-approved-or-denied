@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+.content {
+    box-sizing: border-box;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+    background-image: url('../images/main.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.content--results {
+    background-image: url('../images/results.jpeg');
+}
+
+.content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+
+h1 {
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input  {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.submit {
+    background: #20babd;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background: #fff;
+    color: #20babd;
+}
+
+.table-users {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 30px 30px 50px;
+    border-radius: 10px;
+}
+
+.table-users h1 {
+    color: #000;
+}
+
+.table-users p {
+    font-size: 24px;
+}
+
+.opis {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.opis ul {
+    list-style: none;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+
+.opis li {
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: 0 20px;
+}
+
+.icons img {
+    width: 35px;
+}
+
+.opis span {
+    font-weight: 600;
+}
